@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cyan;
+}
+.btn{
+    position: relative;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: rgb(77, 71, 62);
+    color: rgb(215, 10, 10);
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+#newsletter{
+    position: fixed;
+    top: -100%;
+    left: 50%;  
+    transform: translate(-50%,-50%); 
+    z-index: 1000; 
+    background-color: #fff;
+    width: 550px;
+    padding: 80px 50px 50px;
+    transition: 0.4s;
+    border-radius: 5px;
+    visibility: hidden; 
+}
+#newsletter.active{
+    visibility: visible;
+    top: 50%;
+}
+#newsletter h2{
+    text-align: center;
+    color: #5c4800;
+    font-size: 24px;
+    padding: 20px 10px;
+}
+#newsletter p{
+    text-align: center;
+    color: blue;
+}
+/* #newsletter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#newsletter .box{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input, button{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width: 150px;
+    border: none;
+    letter-spacing: 0.1rem;
+    background-color: rgb(93, 0, 93);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
